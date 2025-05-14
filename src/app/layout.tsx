@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Header from "@/components/header/Header";
 import NavBar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Task01 React",
+  title: "Portifólio Hugo",
   description: "Primeira task do módulo de React VS16",
 };
 
@@ -26,13 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="pt-BR">
+      <body className="layout">
         <Header />
         <NavBar />
-        <main>{children}</main>
+        <main className="content">{children}</main>
         <Footer />
       </body>
     </html>
