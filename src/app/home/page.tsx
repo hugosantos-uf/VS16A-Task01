@@ -20,7 +20,7 @@ const HomePage = () => {
           <p>
             Sou desenvolvedor full stack com foco em aplicações web modernas.
             Atualmente estudo Engenharia de Software e após um período atuando
-            como QA, estou expandindo meus conhecimentos do mundo do
+            como QA, estou expandindo meus conhecimentos no mundo do
             desenvolvimento web com tecnologias como Java, React e PostgreSQL.
           </p>
           <p>
