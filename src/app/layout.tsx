@@ -3,6 +3,13 @@ import "./globals.scss";
 import Header from "@/components/header/Header";
 import NavBar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { Ovo } from "next/font/google";
+
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: ["400"], // pesos desejados
+  variable: "--font-ovo", // cria uma variável CSS
+});
 
 export const metadata: Metadata = {
   title: "Portifólio Hugo",
@@ -15,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={ovo.variable}>
       <body className="layout">
         <Header />
         <NavBar />
