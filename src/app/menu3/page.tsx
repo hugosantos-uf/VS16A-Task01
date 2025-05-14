@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./contato.module.scss";
 
 const Menu3Page = () => {
