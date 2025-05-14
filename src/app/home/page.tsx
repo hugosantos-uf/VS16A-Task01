@@ -1,3 +1,5 @@
+import React from "react";
+
 const HomePage = () => {
   return (
     <section style={{ padding: "2rem" }}>
