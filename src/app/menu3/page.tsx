@@ -1,12 +1,15 @@
+import styles from "./contato.module.scss";
+
 const Menu3Page = () => {
   return (
-    <section style={{ padding: "2rem" }}>
-      <h2>Página Menu 3</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad rem magni
-        sapiente vero obcaecati nobis at quae sequi culpa, autem ab provident
-        dolorem! Dolor blanditiis dicta odio, sunt accusantium provident.
-      </p>
+    <section className={styles.container}>
+      <h2>Entre em Contato</h2>
+      <form className={styles.form}>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu email" required />
+        <textarea placeholder="Sua mensagem..." rows={4} required />
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   );
 };

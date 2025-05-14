@@ -3,12 +3,15 @@ import React from "react";
 const HomePage = () => {
   return (
     <section style={{ padding: "2rem" }}>
-      <h2>Bem-vindo à Página Home</h2>
+      <h2>Olá, eu sou Hugo!</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        reprehenderit, voluptatum recusandae dicta obcaecati nemo aspernatur
-        minima autem corrupti, odio veritatis qui, doloremque dignissimos
-        eligendi facilis debitis architecto delectus hic?
+        Sou desenvolvedor full stack com foco em aplicações web modernas.
+        Atualmente estudo Engenharia de Software e trabalho com tecnologias como
+        Java, React e PostgreSQL.
+      </p>
+      <p>
+        Este site é meu portfólio pessoal — fique à vontade para conhecer meus
+        projetos e me contatar!
       </p>
     </section>
   );
