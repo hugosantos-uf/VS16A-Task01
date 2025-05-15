@@ -16,10 +16,10 @@ const NavBar = () => {
           <Link href="/services">Serviços</Link>
         </li>
         <li>
-          <Link href="/menu2">Trabalhos</Link>
+          <Link href="/projetos">Trabalhos</Link>
         </li>
         <li>
-          <Link href="/menu3">Contato</Link>
+          <Link href="/contato">Contato</Link>
         </li>
       </ul>
     </nav>

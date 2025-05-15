@@ -1,11 +1,74 @@
 import React from "react";
 import styles from "./projetos.module.scss";
+import Image from "next/image";
 
-const Menu2Page = () => {
+const Projetos = () => {
   return (
     <section className={styles.container}>
-      <h2>Projetos em Destaque</h2>
-      <div className={styles.grid}>
+      <p className={styles.hello}>Meu portifólio</p>
+      <h5>Meus últimos trabalhos</h5>
+      <div className={styles.intro}>
+        <div className={styles.conteudo}>
+          <p className={styles.texto}>
+            Sou desenvolvedor full stack com foco em aplicações web modernas.
+            Atualmente estudo Engenharia de Software e após um período atuando
+            como QA, estou expandindo meus conhecimentos no mundo do
+            desenvolvimento web com tecnologias como Java, React e PostgreSQL.
+          </p>
+          <div className={styles.cards}>
+            <div className={styles.card}>
+              <Image
+                src="/supermercado.jpg"
+                alt="supermercado"
+                width={150}
+                height={150}
+              />
+              <h3>Sistema de Supermercado</h3>
+              <p>
+                Aplicação Java com controle de produtos, clientes e vendedores.
+              </p>
+            </div>
+            <div className={styles.card}>
+              <Image
+                src="/cavalos.png"
+                alt="cavalos"
+                width={150}
+                height={150}
+              />
+              <h3>Jogo de Corrida de Cavalos</h3>
+              <p>
+                Simulador de apostas com lógica de atributos e pistas variáveis.
+              </p>
+            </div>
+            <div className={styles.card}>
+              <Image
+                src="/swagger.png"
+                alt="swagger"
+                width={150}
+                height={150}
+              />
+              <h3>CRUD com Spring Boot</h3>
+              <p>Backend completo com PostgreSQL e autenticação JWT.</p>
+            </div>
+            <div className={styles.card}>
+              <Image src="/allure.png" alt="allure" width={150} height={150} />
+              <h3>Testes de API com Java + Allure</h3>
+              <p>
+                Testes automatizados de endpoints REST com Java, integração com
+                Allure Reports e envio de resultados para Discord via GitHub
+                Actions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projetos;
+
+/*       <div className={styles.grid}>
         <div className={styles.card}>
           <h3>Sistema de Supermercado</h3>
           <p>Aplicação Java com controle de produtos, clientes e vendedores.</p>
@@ -70,9 +133,4 @@ const Menu2Page = () => {
             legibilidade e interoperabilidade em sistemas de saúde.
           </p>
         </div>
-      </div>
-    </section>
-  );
-};
-
-export default Menu2Page;
+      </div> */

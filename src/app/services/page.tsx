@@ -16,16 +16,38 @@ const Services = () => {
           </p>
           <div className={styles.cards}>
             <div className={styles.card}>
-              <h3>Linguagens</h3>
-              <p>JS, React, Next, Java, Spring</p>
+              <h3>Desenvolvimento Web</h3>
+              <p>
+                Criação de aplicações modernas, responsivas e performáticas
+                utilizando tecnologias como React, Next.js e TypeScript. Ideal
+                para empresas que desejam uma presença digital robusta e
+                escalável.
+              </p>
             </div>
             <div className={styles.card}>
-              <h3>Educação</h3>
-              <p>Bacharel em Engenharia de Software</p>
+              <h3>Automação de Testes</h3>
+              <p>
+                Implantação de testes automatizados para garantir a qualidade do
+                seu software. Uso de ferramentas como Cypress, Selenium e
+                Postman para testes funcionais, de API e UI.
+              </p>
             </div>
             <div className={styles.card}>
-              <h3>Projetos</h3>
-              <p>Mais de 5 projetos concluídos</p>
+              <h3>Criação de APIs</h3>
+              <p>
+                Desenvolvimento de APIs RESTful seguras, escaláveis e com
+                autenticação JWT. Integração com bancos de dados PostgreSQL e
+                foco em boas práticas de arquitetura backend.
+              </p>
+            </div>
+            <div className={styles.card}>
+              <h3>Devops CI/CD</h3>
+              <p>
+                Integração contínua e entrega contínua com GitHub Actions,
+                Docker, Allure Reports e notificações em canais como Discord.
+                Ideal para automatizar fluxos de teste e deploy em projetos
+                reais.
+              </p>
             </div>
           </div>
         </div>
