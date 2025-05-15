@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import Header from "@/components/header/Header";
-import NavBar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { Ovo } from "next/font/google";
 

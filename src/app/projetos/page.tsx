@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./projetos.module.scss";
-import Image from "next/image";
 import Card from "@/components/card/Card";
 
 const Projetos = () => {
