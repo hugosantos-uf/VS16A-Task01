@@ -3,6 +3,7 @@ import styles from "./home.module.scss";
 import Image from "next/image";
 import { SlArrowRight } from "react-icons/sl";
 import { FiDownload } from "react-icons/fi";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -21,20 +22,16 @@ const HomePage = () => {
           <p className={styles.hello}>Olá, eu sou Hugo! 👋🏻</p>
           <h5>Desenvolvedor Full Stack na Dbc Company</h5>
           <p className={styles.texto}>
-            Sou desenvolvedor full stack com foco em aplicações web modernas.
-            Atualmente estudo Engenharia de Software e após um período atuando
-            como QA, estou expandindo meus conhecimentos no mundo do
-            desenvolvimento web com tecnologias como Java, React e PostgreSQL.
-          </p>
-          <p className={styles.texto}>
-            Este site é meu portfólio pessoal — fique à vontade para conhecer
-            meus projetos e me contatar!
+            Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre
+            meu trabalho, habilidades e projetos. Sinta-se à vontade para
+            explorar e conhecer mais sobre minha trajetória como desenvolvedor
+            full stack.
           </p>
           <div className={styles.botoes}>
-            <a href="#contato" className={styles.botao}>
+            <Link href="/contato" className={styles.botao}>
               Entrar em contato
               <SlArrowRight size={13} style={{ marginLeft: "0.5rem" }} />
-            </a>
+            </Link>
             <a href="/curriculo.pdf" download className={styles.botao}>
               Baixar currículo
               <FiDownload size={13} style={{ marginLeft: "0.5rem" }} />

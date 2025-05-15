@@ -48,26 +48,3 @@
     flex-wrap: nowrap;
   }
 }
-
-.card {
-  flex: 1;
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-
-  h3 {
-    margin-top: 0;
-    color: #00adb5;
-  }
-
-  p {
-    margin-bottom: 0;
-    font-size: 0.95rem;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-}
