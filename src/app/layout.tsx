@@ -25,7 +25,6 @@ export default function RootLayout({
     <html lang="pt-BR" className={ovo.variable}>
       <body className="layout">
         <Header />
-        <NavBar />
         <main className="content">{children}</main>
         <Footer />
       </body>
