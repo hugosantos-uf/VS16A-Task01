@@ -1,11 +1,8 @@
 .container {
+  width: 60%;
   padding: 6rem;
   color: #eeeeee;
   text-align: center;
-
-  @media (min-width: 1400px) {
-    width: 60vw;
-  }
 
   h5 {
     margin-top: 1rem;
@@ -29,22 +26,9 @@
 
 .intro {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 4rem;
-
-  @media (min-width: 1024px) {
-    flex-direction: row;
-  }
-}
-
-.foto {
-  flex-shrink: 0;
-}
-
-.imagemPerfil {
-  object-fit: cover;
-  border-radius: 10%;
 }
 
 .cards {
@@ -54,6 +38,7 @@
 }
 
 .card {
+  width: 20%;
   background-color: #1a1a1a;
   padding: 1rem;
   border-radius: 12px;
@@ -72,30 +57,5 @@
 
   &:hover {
     transform: translateY(-5px);
-  }
-
-  @media (min-width: 1300px) {
-    width: 20%;
-  }
-}
-
-.conteudo {
-  text-align: left;
-}
-
-.ferramentas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.icone {
-  font-size: 2rem;
-  color: #00adb5;
-  transition: transform 0.2s ease;
-
-  &:hover {
-    transform: scale(1.2);
-    color: #eeeeee;
   }
 }

@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #000;
   color: white;
@@ -14,5 +15,9 @@
 
   span {
     color: #00adb5;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
   }
 }
