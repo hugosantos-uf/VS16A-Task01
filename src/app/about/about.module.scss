@@ -12,9 +12,10 @@
   }
 }
 .texto {
+  margin-top: 0;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .hello {
@@ -27,6 +28,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 4rem;
 }
 
 .foto {
@@ -34,38 +36,20 @@
 }
 
 .imagemPerfil {
-  border: 3px solid #00adb5;
   object-fit: cover;
+  border-radius: 10%;
 }
 
-.botoes {
-  margin-top: 2.5rem;
+.cards {
   display: flex;
   gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.botao {
-  background-color: transparent;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    border: 2px solid #00adb5;
-    background-color: #00adb5;
-    color: #fff;
-  }
+  margin-bottom: 2rem;
 }
 
 .card {
+  width: 20%;
   background-color: #1a1a1a;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
@@ -82,5 +66,26 @@
 
   &:hover {
     transform: translateY(-5px);
+  }
+}
+
+.conteudo {
+  text-align: left;
+}
+
+.ferramentas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.icone {
+  font-size: 2rem;
+  color: #00adb5;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    color: #eeeeee;
   }
 }
