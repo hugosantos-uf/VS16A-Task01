@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./projetos.module.scss";
-import Card from "@/components/card/Card";
+import ListaDeCards from "@/components/cardList/CardList";
 
 const Projetos = () => {
   return (
@@ -15,29 +15,7 @@ const Projetos = () => {
             resolver desafios reais no desenvolvimento de software.
           </p>
           <div className={styles.cards}>
-            <Card
-              imagemSrc="/supermercado.jpg"
-              titulo="Sistema de Supermercado"
-              texto="Aplicação Java com controle de produtos, clientes e vendedores."
-            />
-
-            <Card
-              imagemSrc="/cavalos.png"
-              titulo="Jogo de Corrida de Cavalos"
-              texto="Simulador de apostas com lógica de atributos e pistas variáveis."
-            />
-
-            <Card
-              imagemSrc="/swagger.png"
-              titulo="CRUD com Spring Boot"
-              texto="Backend completo com PostgreSQL e autenticação JWT."
-            />
-
-            <Card
-              imagemSrc="/allure.png"
-              titulo="Testes de API com Java"
-              texto="Testes automatizados de endpoints REST com Java, integração com Allure e Discord"
-            />
+            <ListaDeCards url="/data/projetos.json" />
           </div>
         </div>
       </div>

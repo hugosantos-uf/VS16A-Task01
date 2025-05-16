@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/supermercado.jpg",
+    "title": "Sistema de Supermercado",
+    "body": "Aplicação Java com controle de produtos, clientes e vendedores."
+  },
+  {
+    "id": 2,
+    "image": "/cavalos.png",
+    "title": "Jogo de Corrida de Cavalos",
+    "body": "Simulador de apostas com lógica de atributos e pistas variáveis."
+  },
+  {
+    "id": 3,
+    "image": "/swagger.png",
+    "title": "CRUD com Spring Boot",
+    "body": "Backend completo com PostgreSQL e autenticação JWT."
+  },
+  {
+    "id": 4,
+    "image": "/allure.png",
+    "title": "Testes de API com Java",
+    "body": "Testes automatizados de endpoints REST com Java, integração com Allure e Discord"
+  }
+]
