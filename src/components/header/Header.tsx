@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./header.module.scss";
 import NavBar from "../navbar/Navbar";
+import { LoginButton } from "../login/Login";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         HugoSantos<span>.</span>
       </h1>
       <NavBar />
-      <p>Conecte-se comigo</p>
+      <LoginButton />
     </header>
   );
 };

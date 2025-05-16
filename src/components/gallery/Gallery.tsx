@@ -28,7 +28,6 @@ export function Gallery({
             height: "100%",
             objectFit: "cover",
             borderRadius: "10px",
-            border: "3px solid #00adb5",
           }}
         />
       </div>

@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
 import "./globals.scss";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 import { Ovo } from "next/font/google";
 
 const ovo = Ovo({
   subsets: ["latin"],
-  weight: ["400"], // pesos desejados
-  variable: "--font-ovo", // cria uma variável CSS
+  weight: ["400"],
+  variable: "--font-ovo",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Portifólio Hugo",
   description: "Primeira task do módulo de React VS16",
 };
@@ -23,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={ovo.variable}>
       <body className="layout">
-        <Header />
-        <main className="content">{children}</main>
-        <Footer />
+        <GoogleOAuthProvider clientId="87036932809-p6nnu1aarqtedt1p0la20njctidvvo3i.apps.googleusercontent.com">
+          <Header />
+          <main className="content">{children}</main>
+          <Footer />
+        </GoogleOAuthProvider>
       </body>
     </html>
   );
