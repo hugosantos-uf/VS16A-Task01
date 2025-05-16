@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Desenvolvimento Web",
+    "body": "Criação de aplicações modernas, responsivas e performáticas utilizando tecnologias como React, Next.js e TypeScript. Ideal para empresas que desejam uma presença digital robusta e escalável."
+  },
+  {
+    "id": 2,
+    "title": "Automação de Testes",
+    "body": "Implantação de testes automatizados para garantir a qualidade do seu software. Uso de ferramentas como Cypress, Selenium e Postman para testes funcionais, de API e UI."
+  },
+  {
+    "id": 3,
+    "title": "Criação de APIs",
+    "body": "Desenvolvimento de APIs RESTful seguras, escaláveis e com autenticação JWT. Integração com bancos de dados PostgreSQL e foco em boas práticas de arquitetura backend."
+  },
+  {
+    "id": 4,
+    "title": "Devops CI/CD",
+    "body": "Integração contínua e entrega contínua com GitHub Actions, Docker, Allure Reports e notificações em canais como Discord. Ideal para automatizar fluxos de teste e deploy em projetos reais."
+  }
+]
