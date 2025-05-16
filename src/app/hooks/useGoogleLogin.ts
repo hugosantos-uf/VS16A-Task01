@@ -1,15 +1,37 @@
 // hooks/useGoogleLogin.ts
+import { useState } from "react";
 import { useGoogleLogin as useGoogleLoginBase } from "@react-oauth/google";
+import axios from "axios";
 
-export function useGoogleLogin(onSuccess: (token: string) => void) {
+interface GoogleUser {
+  name: string;
+  email: string;
+  picture: string;
+}
+
+export function useGoogleLogin() {
+  const [user, setUser] = useState<GoogleUser | null>(null);
+
   const login = useGoogleLoginBase({
-    onSuccess: (tokenResponse) => {
-      onSuccess(tokenResponse.access_token);
+    onSuccess: async (tokenResponse) => {
+      try {
+        const res = await axios.get<GoogleUser>(
+          "https://www.googleapis.com/oauth2/v3/userinfo",
+          {
+            headers: {
+              Authorization: `Bearer ${tokenResponse.access_token}`,
+            },
+          }
+        );
+        setUser(res.data);
+      } catch (error) {
+        console.error("Erro ao buscar dados do usuário", error);
+      }
     },
-    onError: (errorResponse) => {
-      console.error("Erro no login com Google:", errorResponse);
+    onError: () => {
+      console.error("Login com Google falhou");
     },
   });
 
-  return login;
+  return { user, login };
 }
