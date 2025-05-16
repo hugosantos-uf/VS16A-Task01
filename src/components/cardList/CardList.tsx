@@ -7,12 +7,11 @@ interface ListaDeCardsProps {
   url: string;
 }
 
-// Estrutura esperada dos itens da API (ajuste conforme necessário)
 interface ItemDaAPI {
   id: number;
   title: string;
   body: string;
-  image?: string; // opcional: se sua API tiver imagens
+  image?: string;
 }
 
 const ListaDeCards = ({ url }: ListaDeCardsProps) => {
